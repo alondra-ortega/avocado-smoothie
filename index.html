@@ -10,12 +10,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Password Generator</h1>
-        <h3>password</h3>
-        <form> 
+        <h1 class="title">Password Generator</h1>
+        <h3 class="pw" >password</h3>
+        <form class="form"> 
             <label for="characterAmountNumber">Number of Characters</label> 
+            <div class="x">
             <input type="range" min="8" max="128" value="10" id="characterAmountRange">
-            <input type = "number" min="8" max = "128" value="10" id="characterAmountNumber">
+            <input class = "y" type = "number" min="8" max = "128" value="10" id="characterAmountNumber">
+            </div>
 
             <label for="includeUpperCase">Include Uppercase</label>
             <input type="checkbox" id=includeUpperCase>
@@ -26,7 +28,7 @@
             <label for="includeSymbols">Include Symbols</label>
             <input type="checkbox" id=includeSymbols>
 
-            <button type="submit">Generate </button>
+            <button type="submit" class="btn">Generate </button>
         </form>
         <!-- this has created a space for all the input instead of prompts
         I chose to do this because it's less annoying to select 
