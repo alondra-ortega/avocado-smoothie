@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <h3>password</h3>
+        <form> 
+            <label for="characterAmountNumber">Number of Characters</label> 
+            <input type="range" min="8" max="128" value="10" id="characterAmountRange">
+            <input type = "number" min="8" max = "128" value="10" id="characterAmountNumber">
+
+            <label for="includeUpperCase">Include Uppercase</label>
+            <input type="checkbox" id=includeUpperCase>
+
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id=includeNumbers>
+
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id=includeSymbols>
+
+            <button type="submit">Generate </button>
+        </form>
+        <!-- this has created a space for all the input instead of prompts
+        I chose to do this because it's less annoying to select 
+        everything first instead of getting prompts of yes and no
+        and it eliminates errors. I used a range and number input 
+        to select the length of password 8-128 char, and checkboxes
+        to select whether or not the user wants their password to 
+        include certain characters-->
+    </div>
+</body>
+</html>
